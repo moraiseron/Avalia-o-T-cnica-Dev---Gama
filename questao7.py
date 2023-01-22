@@ -13,3 +13,18 @@ Para o exemplo, acima iremos retornar:
 }
 Os valores de entrada, x e y são obrigatórios e devem ser números.
 '''
+
+from flask import Flask, request
+
+
+app = Flask(__name__)
+
+@app.route('/soma', methods=['POST']) 
+def soma():
+    num= request.get_json()
+    total = num['x'] + num['y']
+    return {"Resultado": total}, 202
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
