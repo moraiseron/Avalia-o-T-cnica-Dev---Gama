@@ -11,3 +11,16 @@ primeira função.
 ○ Exemplo da primeira entrada: “Olá”. Exemplo da segunda entrada: “Mundo”.
 Exemplo da saída do sistema: “Olá,Mundo”.
 '''
+
+def concatenacao(texto1, texto2):
+    return texto1 + ',' + texto2
+
+
+def print_return():
+    texto1 = str(input('Digite a primeira palavra: '))
+    texto2 = str(input('Digite a segunda palavra: '))
+
+    print(concatenacao(texto1, texto2))
+
+
+print_return()

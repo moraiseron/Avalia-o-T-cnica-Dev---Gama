@@ -25,7 +25,7 @@ if par == 0:
 if numero >= 8 and numero <= 16:
     print('O número está entre 8 e 16.')
 
-if numero == 51 or 80:
+if numero == 51 or numero == 80:
     print('O número é 51 ou 80.')
     
 
